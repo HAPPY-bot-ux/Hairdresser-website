@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome | Nelz Hair</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+  <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+
+  <style>
+    :root {
+      --primary: #ff9fc1;   /* soft pastel pink */
+      --secondary: #ffd7e0; /* blush */
+      --gold: #fbd1a2;      /* rose-gold */
+      --text-light: #fff9f9;
+      --muted: #ffe6eb;      /* soft pink for text */
+      --radius: 28px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Poppins", sans-serif; }
+
+    body, html { height: 100%; overflow: hidden; background: #2b1e28; }
+
+    .landing-container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background: url('images/landing.jpg') center center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    /* Soft Luxury Pink overlay */
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(43, 30, 40, 0.55);
+      backdrop-filter: blur(6px);
+    }
+
+    /* Soft floating bokeh lights */
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255,182,193,0.35);
+      animation: floatCircle 8s ease-in-out infinite;
+    }
+    .circle:nth-child(1) { width: 140px; height: 140px; top: 10%; left: 15%; }
+    .circle:nth-child(2) { width: 90px; height: 90px; top: 70%; left: 75%; animation-delay: 2s; }
+    .circle:nth-child(3) { width: 120px; height: 120px; top: 40%; left: 55%; animation-delay: 4s; }
+    .circle:nth-child(4) { width: 70px; height: 70px; top: 20%; left: 80%; animation-delay: 6s; }
+
+    @keyframes floatCircle {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+
+    .content {
+      position: relative;
+      text-align: center;
+      color: var(--text-light);
+      max-width: 700px;
+      padding: 20px;
+      animation: fadeIn 1.2s ease-in-out forwards;
+    }
+
+    /* Feminine glowing logo */
+    .logo {
+      width: 160px;
+      margin-bottom: 20px;
+      animation: float 4s ease-in-out infinite;
+      border-radius: 50%;
+      border: 4px solid var(--gold);
+      box-shadow: 0 0 45px rgba(255,182,193,0.6);
+    }
+
+    h1 {
+      font-size: 3.2rem;
+      margin-bottom: 12px;
+      letter-spacing: .5px;
+    }
+    h1 span {
+      background: linear-gradient(90deg, #ff9fc1, #ffd7e0, #fbd1a2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 2px 10px rgba(255,182,193,0.4);
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: var(--muted);
+      margin-bottom: 25px;
+    }
+
+    p {
+      color: var(--muted);
+      font-size: 1.15rem;
+      margin-bottom: 35px;
+    }
+
+    /* Feminine Gold-Pink Button */
+    .enter-btn {
+      display: inline-block;
+      padding: 16px 40px;
+      font-weight: 600;
+      font-size: 1.15rem;
+      color: white;
+      border-radius: var(--radius);
+      text-decoration: none;
+      background: linear-gradient(90deg, #ff9fc1, #fbd1a2);
+      box-shadow: 0 0 35px rgba(255,182,193,0.45);
+      transition: all 0.35s ease;
+    }
+    .enter-btn:hover {
+      transform: translateY(-5px) scale(1.1);
+      box-shadow: 0 0 55px rgba(255,182,193,0.7);
+    }
+
+    /* Social icons */
+    .socials {
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    .social {
+      color: var(--text-light);
+      font-size: 1.5rem;
+      background: rgba(255,255,255,0.07);
+      border-radius: 50%;
+      width: 52px;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all .3s ease;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+
+    .social:hover {
+      background: linear-gradient(90deg, #ff9fc1, #fbd1a2);
+      color: white;
+      transform: scale(1.18);
+      box-shadow: 0 0 38px rgba(255,182,193,0.7);
+    }
+
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes float { 0%,100%{transform:translateY(0);} 50%{transform:translateY(-12px);} }
+
+    .reveal { opacity: 0; transform: translateY(30px); transition: all 1s ease; }
+    .reveal.show { opacity: 1; transform: translateY(0); }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2.3rem; }
+      h2 { font-size: 1.05rem; }
+      p { font-size: 1rem; }
+      .logo { width: 125px; }
+      .enter-btn { padding: 14px 28px; font-size: 1.05rem; }
+      .social { width: 42px; height: 42px; font-size: 1.2rem; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="landing-container">
+    <div class="overlay"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+
+    <div class="content reveal">
+      <img src="images/Screenshot (225).png" alt="Nelz Hair Logo" class="logo">
+
+      <h1>Welcome to <span>Nelz Hair</span></h1>
+      <h2>Where Beauty Meets Elegance</h2>
+
+      <p>Premium hair care and styling services in Cape Town — feminine, luxurious, and crafted for you.</p>
+
+      <a href="main.html" class="enter-btn">Get Started</a>
+
+      <div class="socials">
+        <a href="https://facebook.com" target="_blank" class="social"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank" class="social"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://x.com" target="_blank" class="social"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://wa.me/27611234567?text=Hi!%20I'm%20interested%20in%20Nelz%20Hair" class="social"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window.addEventListener("load", () => {
+      document.querySelector(".reveal").classList.add("show");
+    });
+  </script>
+
+</body>
+</html>
