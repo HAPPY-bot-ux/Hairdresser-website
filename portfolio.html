@@ -56,7 +56,7 @@
       </div>
     </a>
     <nav class="hidden md:flex gap-6 items-center text-sm font-medium">
-      <a href="index.html" class="hover:text-teal-600 transition">Home</a>
+      <a href="main.html" class="hover:text-teal-600 transition">Home</a>
       <a href="about.html" class="hover:text-teal-600 transition">About</a>
       <a href="services.html" class="hover:text-teal-600 transition">Services</a>
       <a href="portfolio.html" class="text-teal-600 font-semibold">Portfolio</a>      
@@ -118,60 +118,90 @@
 <section class="max-w-7xl mx-auto px-6 py-20">
   <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Latest Transformations</h2>
   
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-    <!-- Portfolio Item -->
-    <div class="relative overflow-hidden rounded-3xl shadow-2xl group cursor-pointer">
-      <img src="images/WhatsApp Image 2025-11-15 at 06.32.53.jpeg" alt="Elegant Waves" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110">
+  <div id="portfolio-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- VISIBLE CARDS (first 6) -->
+    <div class="relative overflow-hidden rounded-3xl shadow-2xl group cursor-pointer portfolio-item">
+      <img src="images/WhatsApp Image 2025-11-15 at 06.32.53.jpeg" alt="Elegant Waves" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" onclick="openLightbox(this)">
       <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-center items-center text-center p-6">
         <h3 class="text-white text-xl font-semibold mb-2">Elegant Waves</h3>
         <p class="text-white text-sm">Soft waves and a glossy finish — perfect for any occasion.</p>
       </div>
     </div>
 
-    <div class="relative overflow-hidden rounded-3xl shadow-2xl group cursor-pointer">
-      <img src="images/WhatsApp Image 2025-11-15 at 06.32.55.jpeg" alt="Bold Color Blend" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110">
+    <div class="relative overflow-hidden rounded-3xl shadow-2xl group cursor-pointer portfolio-item">
+      <img src="images/WhatsApp Image 2025-11-15 at 06.32.55.jpeg" alt="Bold Color Blend" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" onclick="openLightbox(this)">
       <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-center items-center text-center p-6">
         <h3 class="text-white text-xl font-semibold mb-2">Bold Color Blend</h3>
         <p class="text-white text-sm">Rich tones and creative highlights for a confident, modern look.</p>
       </div>
     </div>
 
-    <div class="relative overflow-hidden rounded-3xl shadow-2xl group cursor-pointer">
-      <img src="images/WhatsApp Image 2025-11-15 at 06.32.59.jpeg" alt="Classic Bridal Updo" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110">
+    <div class="relative overflow-hidden rounded-3xl shadow-2xl group cursor-pointer portfolio-item">
+      <img src="images/WhatsApp Image 2025-11-15 at 06.32.59.jpeg" alt="Classic Bridal Updo" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" onclick="openLightbox(this)">
       <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-center items-center text-center p-6">
         <h3 class="text-white text-xl font-semibold mb-2">Classic Bridal Updo</h3>
         <p class="text-white text-sm">Timeless beauty designed to make every bride feel radiant.</p>
       </div>
     </div>
 
-    <div class="relative overflow-hidden rounded-3xl shadow-2xl group cursor-pointer">
-      <img src="images/WhatsApp Image 2025-11-15 at 06.32.59.jpeg" alt="Luxury Braids" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110">
+    <div class="relative overflow-hidden rounded-3xl shadow-2xl group cursor-pointer portfolio-item">
+      <img src="images/WhatsApp Image 2025-11-15 at 06.33.03 (1).jpeg" alt="Luxury Braids" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" onclick="openLightbox(this)">
       <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-center items-center text-center p-6">
         <h3 class="text-white text-xl font-semibold mb-2">Luxury Braids</h3>
         <p class="text-white text-sm">Intricate braids with elegant detail for a standout look.</p>
       </div>
     </div>
 
-    <div class="relative overflow-hidden rounded-3xl shadow-2xl group cursor-pointer">
-      <img src="images/WhatsApp Image 2025-11-15 at 06.33.04 (1).jpeg" alt="Natural Glow" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110">
+    <div class="relative overflow-hidden rounded-3xl shadow-2xl group cursor-pointer portfolio-item">
+      <img src="images/WhatsApp Image 2025-11-15 at 06.33.04 (1).jpeg" alt="Natural Glow" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" onclick="openLightbox(this)">
       <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-center items-center text-center p-6">
         <h3 class="text-white text-xl font-semibold mb-2">Natural Glow</h3>
         <p class="text-white text-sm">A fresh, effortless style that enhances natural beauty.</p>
       </div>
     </div>
 
-    <div class="relative overflow-hidden rounded-3xl shadow-2xl group cursor-pointer">
-      <img src="images/WhatsApp Image 2025-11-15 at 06.33.03.jpeg" alt="Gent's Fade Cut" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110">
+    <div class="relative overflow-hidden rounded-3xl shadow-2xl group cursor-pointer portfolio-item">
+      <img src="images/WhatsApp Image 2025-11-15 at 06.33.03.jpeg" alt="Gent's Fade Cut" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" onclick="openLightbox(this)">
       <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-center items-center text-center p-6">
         <h3 class="text-white text-xl font-semibold mb-2">Gent’s Fade Cut</h3>
         <p class="text-white text-sm">Sharp precision and smooth fades — redefining masculine style.</p>
       </div>
     </div>
+
+    <!-- HIDDEN EXTRA CARDS -->
+    <div class="hidden relative overflow-hidden rounded-3xl shadow-2xl group cursor-pointer portfolio-item extra-card">
+      <img src="images/landing.jpg" alt="Chic Bob Cut" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" onclick="openLightbox(this)">
+      <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-center items-center text-center p-6">
+        <h3 class="text-white text-xl font-semibold mb-2">Chic Bob Cut</h3>
+        <p class="text-white text-sm">Stylish bob cut with a modern twist.</p>
+      </div>
+    </div>
+
+    <div class="hidden relative overflow-hidden rounded-3xl shadow-2xl group cursor-pointer portfolio-item extra-card">
+      <img src="images/landing.jpg" alt="Vibrant Highlights" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" onclick="openLightbox(this)">
+      <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-center items-center text-center p-6">
+        <h3 class="text-white text-xl font-semibold mb-2">Vibrant Highlights</h3>
+        <p class="text-white text-sm">Bright and bold colors for a fun, modern style.</p>
+      </div>
+    </div>
+
+      <div class="hidden relative overflow-hidden rounded-3xl shadow-2xl group cursor-pointer portfolio-item extra-card">
+      <img src="images/landing.jpg" alt="Vibrant Highlights" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" onclick="openLightbox(this)">
+      <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-center items-center text-center p-6">
+        <h3 class="text-white text-xl font-semibold mb-2">Vibrant Highlights</h3>
+        <p class="text-white text-sm">Bright and bold colors for a fun, modern style.</p>
+      </div>
+    </div>
+    <!-- Add more extra cards as needed -->
+  </div>
+
+  <!-- Show More Button -->
+  <div class="text-center mt-8">
+    <button id="show-more-btn" class="px-6 py-3 bg-gradient-to-r from-teal-500 to-purple-500 text-white font-medium rounded-full shadow-lg hover:opacity-90 transition">Show More</button>
   </div>
 
   <!-- PREMIUM CTA -->
   <div class="mt-20 text-center relative bg-gradient-to-r from-teal-50 to-purple-50 p-12 rounded-3xl shadow-2xl overflow-hidden">
-    <!-- Decorative floating circle -->
     <div class="absolute -top-16 -left-16 w-40 h-40 bg-[#f2d6cb] opacity-30 rounded-full blur-[100px]"></div>
     <div class="absolute -bottom-16 -right-16 w-56 h-56 bg-[#f9e5de] opacity-30 rounded-full blur-[120px]"></div>
 
@@ -180,6 +210,39 @@
     <a href="contact.html" class="mt-6 inline-block px-8 py-3 bg-gradient-to-r from-teal-500 to-purple-500 text-white font-medium rounded-full shadow-lg hover:opacity-90 transition">Book Appointment</a>
   </div>
 </section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50">
+  <img id="lightbox-img" src="" class="max-h-[90%] max-w-[90%] rounded-3xl shadow-2xl">
+  <button class="absolute top-6 right-6 text-white text-3xl font-bold" onclick="closeLightbox()">×</button>
+</div>
+
+<script>
+  // Show more functionality
+  const showMoreBtn = document.getElementById('show-more-btn');
+  const extraCards = document.querySelectorAll('.extra-card');
+
+  showMoreBtn.addEventListener('click', () => {
+    extraCards.forEach(card => card.classList.toggle('hidden'));
+    showMoreBtn.textContent = showMoreBtn.textContent === 'Show More' ? 'Show Less' : 'Show More';
+  });
+
+  // Lightbox functionality
+  function openLightbox(img) {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    lightboxImg.src = img.src;
+    lightbox.classList.remove('hidden');
+    lightbox.classList.add('flex');
+  }
+
+  function closeLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    lightbox.classList.add('hidden');
+    lightbox.classList.remove('flex');
+  }
+</script>
+
 
 <!-- FOOTER -->
 <footer class="bg-gradient-to-r from-gray-900 via-teal-900 to-purple-900 text-gray-100 pt-14 pb-8">
@@ -196,10 +259,12 @@
     <div>
       <h3 class="font-semibold">Quick Links</h3>
       <ul class="mt-3 space-y-2 text-sm text-gray-300">
-        <li><a href="services.html" class="hover:text-white">Services</a></li>
-        <li><a href="portfolio.html" class="hover:text-white">Portfolio</a></li>
-        <li><a href="pricing.html" class="hover:text-white">Pricing</a></li>
-        <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+            <li><a href="main.html" class="hover:text-white">Home</a></li>
+            <li><a href="about.html" class="hover:text-white">About</a></li>
+            <li><a href="services.html" class="hover:text-white">Services</a></li>
+            <li><a href="portfolio.html" class="hover:text-white">Portfolio</a></li>
+            <li><a href="pricing.html" class="hover:text-white">Pricing</a></li>
+            <li><a href="contact.html" class="hover:text-white">Contact</a></li>
       </ul>
     </div>
     <div>
