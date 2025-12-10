@@ -112,59 +112,62 @@
 
 <!-- PRICING GRID -->
 <section class="max-w-7xl mx-auto px-6 py-20">
+  <h2 class="text-4xl font-extrabold mb-12 text-center text-gray-900">Our Services & Pricing</h2>
   <div class="grid md:grid-cols-3 gap-10">
-    
-    <div class="glass p-6 rounded-2xl shadow-lg hover:-translate-y-2 hover:shadow-2xl transition fade-up text-center">
-      <div class="text-sm text-gray-500">Basic</div>
+
+    <!-- Basic -->
+    <div class="glass-card p-6 rounded-3xl shadow-lg text-center transform transition-all hover:-translate-y-3 hover:shadow-2xl">
+      <div class="text-sm text-gray-500 font-medium">Basic</div>
       <h3 class="text-2xl font-bold mt-2">R250</h3>
       <p class="text-sm text-gray-600 mt-2">Wash, cut & blow-dry</p>
-      <ul class="mt-3 text-sm text-gray-600 space-y-1">
+      <ul class="mt-4 text-sm text-gray-600 space-y-1">
         <li>• Consultation</li>
         <li>• Quick styling</li>
       </ul>
-      <div class="mt-4">
-        <a href="contact.html" class="px-6 py-2 bg-teal-500 text-white rounded-full hover:opacity-90 transition">Book</a>
-      </div>
+      <a href="contact.html" class="mt-6 inline-block px-6 py-2 bg-teal-500 text-white rounded-full font-semibold shadow-md hover:opacity-90 transition">
+        Book Now
+      </a>
     </div>
 
-    <div class="glass p-6 rounded-2xl shadow-2xl border-2 border-teal-400 bg-teal-50 hover:-translate-y-2 transition fade-up text-center">
-      <div class="text-sm text-gray-500">Most Popular</div>
+    <!-- Standard -->
+    <div class="glass-card p-6 rounded-3xl shadow-2xl border-2 border-teal-400 bg-teal-50 text-center transform transition-all hover:-translate-y-3">
+      <div class="text-sm text-gray-500 font-medium">Most Popular</div>
       <h3 class="text-2xl font-bold mt-2">Standard - R600</h3>
       <p class="text-sm text-gray-600 mt-2">Color service with consultation & toner</p>
-      <ul class="mt-3 text-sm text-gray-600 space-y-1">
+      <ul class="mt-4 text-sm text-gray-600 space-y-1">
         <li>• Full color or highlights</li>
         <li>• Toner & finish</li>
       </ul>
-      <div class="mt-4">
-        <a href="contact.html" class="px-6 py-2 bg-gradient-to-r from-teal-500 to-purple-500 text-white rounded-full hover:opacity-90 transition">Book</a>
-      </div>
+      <a href="contact.html" class="mt-6 inline-block px-6 py-2 bg-gradient-to-r from-teal-500 to-purple-500 text-white rounded-full font-semibold shadow-md hover:opacity-90 transition">
+        Book Now
+      </a>
     </div>
 
-    <div class="glass p-6 rounded-2xl shadow-lg hover:-translate-y-2 hover:shadow-2xl transition fade-up text-center">
-      <div class="text-sm text-gray-500">Premium</div>
+    <!-- Premium -->
+    <div class="glass-card p-6 rounded-3xl shadow-lg text-center transform transition-all hover:-translate-y-3 hover:shadow-2xl">
+      <div class="text-sm text-gray-500 font-medium">Premium</div>
       <h3 class="text-2xl font-bold mt-2">Keratin - R1200</h3>
       <p class="text-sm text-gray-600 mt-2">Frizz control & long-lasting smoothness</p>
-      <ul class="mt-3 text-sm text-gray-600 space-y-1">
+      <ul class="mt-4 text-sm text-gray-600 space-y-1">
         <li>• Deep nourishment</li>
         <li>• Long-lasting results</li>
       </ul>
-      <div class="mt-4">
-        <a href="contact.html" class="px-6 py-2 bg-teal-500 text-white rounded-full hover:opacity-90 transition">Book</a>
-      </div>
+      <a href="contact.html" class="mt-6 inline-block px-6 py-2 bg-teal-500 text-white rounded-full font-semibold shadow-md hover:opacity-90 transition">
+        Book Now
+      </a>
     </div>
 
   </div>
-
 </section>
 
-<!-- BRAIDS & HAIRSTYLES CARDS SECTION -->
-<section class="max-w-7xl mx-auto px-6 mt-16">
-  <h2 class="text-4xl font-extrabold mb-6 text-center text-pink-600">
+<!-- BRAIDS & HAIRSTYLES SECTION -->
+<section class="max-w-7xl mx-auto px-6 py-16">
+  <h2 class="text-4xl font-extrabold mb-8 text-center text-pink-600">
     Braids & Hairstyles
   </h2>
 
   <!-- Category Buttons -->
-  <div class="flex flex-wrap justify-center gap-4 mb-12">
+  <div class="flex flex-wrap justify-center gap-4 mb-12 sticky top-20 z-10 bg-white py-4 rounded-xl shadow-md">
     <button class="category-btn px-6 py-2 rounded-full bg-pink-500 text-white font-semibold hover:bg-pink-600 transition" data-category="all">All</button>
     <button class="category-btn px-6 py-2 rounded-full bg-pink-100 text-pink-600 font-semibold hover:bg-pink-200 transition" data-category="box-braids">Box Braids</button>
     <button class="category-btn px-6 py-2 rounded-full bg-pink-100 text-pink-600 font-semibold hover:bg-pink-200 transition" data-category="twist">Twist</button>
@@ -173,180 +176,144 @@
     <button class="category-btn px-6 py-2 rounded-full bg-pink-100 text-pink-600 font-semibold hover:bg-pink-200 transition" data-category="premium">Premium Combos</button>
   </div>
 
-  <style>
-    .premium-card {
-      background: linear-gradient(to bottom, #ffe6f2, #ffffff);
-      backdrop-filter: blur(14px);
-      border: 1px solid rgba(255, 255, 255, 0.5);
-      transition: all .4s ease;
-    }
-    .premium-card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 20px 35px rgba(255, 105, 180, 0.3);
-    }
-  </style>
-
-  <!-- Cards Container -->
+  <!-- Cards Grid -->
   <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8" id="cardsContainer">
 
     <!-- Box Braids -->
     <div class="premium-card p-6 rounded-3xl text-center shadow-xl" data-category="box-braids">
       <h3 class="text-xl font-semibold text-gray-900">Box Braids (Medium)</h3>
-      <p class="text-2xl font-bold text-pink-600 mt-1">R480</p>
-      <p class="text-sm text-gray-600 mt-2">Neat medium-size box braids.</p>
-      <a href="https://wa.me/27YOURNUMBER?text=I%20want%20to%20book%20Box%20Braids%20Medium"
-         class="mt-4 inline-block px-6 py-2 bg-pink-500 text-white rounded-full font-semibold shadow-md hover:bg-pink-600 transition">
-         Book Now
-      </a>
+      <p class="text-2xl font-bold text-pink-600 mt-2">R480</p>
+      <p class="text-sm text-gray-600 mt-1">Neat medium-size box braids.</p>
+      <a href="https://wa.me/27YOURNUMBER?text=I%20want%20to%20book%20Box%20Braids%20Medium" class="mt-4 inline-block px-6 py-2 bg-pink-500 text-white rounded-full font-semibold shadow-md hover:bg-pink-600 transition">Book Now</a>
     </div>
 
     <div class="premium-card p-6 rounded-3xl text-center shadow-xl" data-category="box-braids">
       <h3 class="text-xl font-semibold text-gray-900">Box Braids (Long)</h3>
-      <p class="text-2xl font-bold text-pink-600 mt-1">R500</p>
-      <p class="text-sm text-gray-600 mt-2">Long-length stylish box braids.</p>
-      <a href="https://wa.me/27YOURNUMBER?text=I%20want%20to%20book%20Box%20Braids%20Long"
-         class="mt-4 inline-block px-6 py-2 bg-pink-500 text-white rounded-full font-semibold shadow-md hover:bg-pink-600 transition">
-         Book Now
-      </a>
+      <p class="text-2xl font-bold text-pink-600 mt-2">R500</p>
+      <p class="text-sm text-gray-600 mt-1">Long-length stylish box braids.</p>
+      <a href="https://wa.me/27YOURNUMBER?text=I%20want%20to%20book%20Box%20Braids%20Long" class="mt-4 inline-block px-6 py-2 bg-pink-500 text-white rounded-full font-semibold shadow-md hover:bg-pink-600 transition">Book Now</a>
     </div>
 
     <div class="premium-card p-6 rounded-3xl text-center shadow-xl" data-category="box-braids">
       <h3 class="text-xl font-semibold text-gray-900">Knotless Long Braids</h3>
-      <p class="text-2xl font-bold text-pink-600 mt-1">R550</p>
-      <p class="text-sm text-gray-600 mt-2">Lightweight & natural knotless look.</p>
-      <a href="https://wa.me/27YOURNUMBER?text=I%20want%20to%20book%20Knotless%20Long%20Braids"
-         class="mt-4 inline-block px-6 py-2 bg-pink-500 text-white rounded-full font-semibold shadow-md hover:bg-pink-600 transition">
-         Book Now
-      </a>
+      <p class="text-2xl font-bold text-pink-600 mt-2">R550</p>
+      <p class="text-sm text-gray-600 mt-1">Lightweight & natural knotless look.</p>
+      <a href="https://wa.me/27YOURNUMBER?text=I%20want%20to%20book%20Knotless%20Long%20Braids" class="mt-4 inline-block px-6 py-2 bg-pink-500 text-white rounded-full font-semibold shadow-md hover:bg-pink-600 transition">Book Now</a>
     </div>
 
     <div class="premium-card p-6 rounded-3xl text-center shadow-xl" data-category="box-braids">
       <h3 class="text-xl font-semibold text-gray-900">Goddess Knotless Braids</h3>
-      <p class="text-2xl font-bold text-pink-600 mt-1">R680</p>
-      <p class="text-sm text-gray-600 mt-2">Curly finish for a goddess look.</p>
-      <a href="https://wa.me/27YOURNUMBER?text=I%20want%20to%20book%20Goddess%20Knotless%20Braids"
-         class="mt-4 inline-block px-6 py-2 bg-pink-500 text-white rounded-full font-semibold shadow-md hover:bg-pink-600 transition">
-         Book Now
-      </a>
+      <p class="text-2xl font-bold text-pink-600 mt-2">R680</p>
+      <p class="text-sm text-gray-600 mt-1">Curly finish for a goddess look.</p>
+      <a href="https://wa.me/27YOURNUMBER?text=I%20want%20to%20book%20Goddess%20Knotless%20Braids" class="mt-4 inline-block px-6 py-2 bg-pink-500 text-white rounded-full font-semibold shadow-md hover:bg-pink-600 transition">Book Now</a>
+    </div>
+
+    <div class="premium-card p-6 rounded-3xl text-center shadow-xl" data-category="box-braids">
+      <h3 class="text-xl font-semibold text-gray-900">Pom Poms Braids</h3>
+      <p class="text-2xl font-bold text-pink-600 mt-2">R580</p>
+      <p class="text-sm text-gray-600 mt-1">Stylish pom pom braid style.</p>
+      <a href="https://wa.me/27YOURNUMBER?text=I%20want%20to%20book%20Pom%20Poms%20Braids" class="mt-4 inline-block px-6 py-2 bg-pink-500 text-white rounded-full font-semibold shadow-md hover:bg-pink-600 transition">Book Now</a>
     </div>
 
     <!-- Twist -->
     <div class="premium-card p-6 rounded-3xl text-center shadow-xl" data-category="twist">
       <h3 class="text-xl font-semibold text-gray-900">Twist (Long)</h3>
-      <p class="text-2xl font-bold text-pink-600 mt-1">R580</p>
-      <p class="text-sm text-gray-600 mt-2">Long rope twists.</p>
-      <a href="https://wa.me/27YOURNUMBER?text=I%20want%20to%20book%20Twist%20Long"
-         class="mt-4 inline-block px-6 py-2 bg-pink-500 text-white rounded-full font-semibold shadow-md hover:bg-pink-600 transition">
-         Book Now
-      </a>
+      <p class="text-2xl font-bold text-pink-600 mt-2">R580</p>
+      <p class="text-sm text-gray-600 mt-1">Long rope twists.</p>
+      <a href="https://wa.me/27YOURNUMBER?text=I%20want%20to%20book%20Twist%20Long" class="mt-4 inline-block px-6 py-2 bg-pink-500 text-white rounded-full font-semibold shadow-md hover:bg-pink-600 transition">Book Now</a>
     </div>
 
     <div class="premium-card p-6 rounded-3xl text-center shadow-xl" data-category="twist">
       <h3 class="text-xl font-semibold text-gray-900">Twist (Medium)</h3>
-      <p class="text-2xl font-bold text-pink-600 mt-1">R550</p>
-      <p class="text-sm text-gray-600 mt-2">Medium-length rope twists.</p>
-      <a href="https://wa.me/27YOURNUMBER?text=I%20want%20to%20book%20Twist%20Medium"
-         class="mt-4 inline-block px-6 py-2 bg-pink-500 text-white rounded-full font-semibold shadow-md hover:bg-pink-600 transition">
-         Book Now
-      </a>
+      <p class="text-2xl font-bold text-pink-600 mt-2">R550</p>
+      <p class="text-sm text-gray-600 mt-1">Medium-length rope twists.</p>
+      <a href="https://wa.me/27YOURNUMBER?text=I%20want%20to%20book%20Twist%20Medium" class="mt-4 inline-block px-6 py-2 bg-pink-500 text-white rounded-full font-semibold shadow-md hover:bg-pink-600 transition">Book Now</a>
     </div>
 
     <div class="premium-card p-6 rounded-3xl text-center shadow-xl" data-category="twist">
       <h3 class="text-xl font-semibold text-gray-900">Afro Kinky Twist</h3>
-      <p class="text-2xl font-bold text-pink-600 mt-1">R600</p>
-      <p class="text-sm text-gray-600 mt-2">Thick afro-textured twists.</p>
-      <a href="https://wa.me/27YOURNUMBER?text=I%20want%20to%20book%20Afro%20Kinky%20Twist"
-         class="mt-4 inline-block px-6 py-2 bg-pink-500 text-white rounded-full font-semibold shadow-md hover:bg-pink-600 transition">
-         Book Now
-      </a>
-    </div>
-
-    <div class="premium-card p-6 rounded-3xl text-center shadow-xl" data-category="box-braids">
-      <h3 class="text-xl font-semibold text-gray-900">Pom Poms Braids</h3>
-      <p class="text-2xl font-bold text-pink-600 mt-1">R580</p>
-      <p class="text-sm text-gray-600 mt-2">Stylish pom pom braid style.</p>
-      <a href="https://wa.me/27YOURNUMBER?text=I%20want%20to%20book%20Pom%20Poms%20Braids"
-         class="mt-4 inline-block px-6 py-2 bg-pink-500 text-white rounded-full font-semibold shadow-md hover:bg-pink-600 transition">
-         Book Now
-      </a>
+      <p class="text-2xl font-bold text-pink-600 mt-2">R600</p>
+      <p class="text-sm text-gray-600 mt-1">Thick afro-textured twists.</p>
+      <a href="https://wa.me/27YOURNUMBER?text=I%20want%20to%20book%20Afro%20Kinky%20Twist" class="mt-4 inline-block px-6 py-2 bg-pink-500 text-white rounded-full font-semibold shadow-md hover:bg-pink-600 transition">Book Now</a>
     </div>
 
     <!-- Dreadlocks -->
     <div class="premium-card p-6 rounded-3xl text-center shadow-xl" data-category="dreadlocks">
       <h3 class="text-xl font-semibold text-gray-900">Dreadlocks Start</h3>
-      <p class="text-2xl font-bold text-pink-600 mt-1">R350</p>
-      <p class="text-sm text-gray-600 mt-2">Start your dread journey.</p>
-      <a href="https://wa.me/27YOURNUMBER?text=I%20want%20to%20book%20Dreadlocks%20Start"
-         class="mt-4 inline-block px-6 py-2 bg-pink-500 text-white rounded-full font-semibold shadow-md hover:bg-pink-600 transition">
-         Book Now
-      </a>
+      <p class="text-2xl font-bold text-pink-600 mt-2">R350</p>
+      <p class="text-sm text-gray-600 mt-1">Start your dread journey.</p>
+      <a href="https://wa.me/27YOURNUMBER?text=I%20want%20to%20book%20Dreadlocks%20Start" class="mt-4 inline-block px-6 py-2 bg-pink-500 text-white rounded-full font-semibold shadow-md hover:bg-pink-600 transition">Book Now</a>
     </div>
 
     <div class="premium-card p-6 rounded-3xl text-center shadow-xl" data-category="dreadlocks">
       <h3 class="text-xl font-semibold text-gray-900">Dreadlocks Treatment & Style</h3>
-      <p class="text-2xl font-bold text-pink-600 mt-1">R300</p>
-      <p class="text-sm text-gray-600 mt-2">Wash, retwist & styling.</p>
-      <a href="https://wa.me/27YOURNUMBER?text=I%20want%20to%20book%20Dreadlocks%20Treatment"
-         class="mt-4 inline-block px-6 py-2 bg-pink-500 text-white rounded-full font-semibold shadow-md hover:bg-pink-600 transition">
-         Book Now
-      </a>
+      <p class="text-2xl font-bold text-pink-600 mt-2">R300</p>
+      <p class="text-sm text-gray-600 mt-1">Wash, retwist & styling.</p>
+      <a href="https://wa.me/27YOURNUMBER?text=I%20want%20to%20book%20Dreadlocks%20Treatment" class="mt-4 inline-block px-6 py-2 bg-pink-500 text-white rounded-full font-semibold shadow-md hover:bg-pink-600 transition">Book Now</a>
     </div>
 
     <!-- Wigs -->
     <div class="premium-card p-6 rounded-3xl text-center shadow-xl" data-category="wigs">
       <h3 class="text-xl font-semibold text-gray-900">Plain Wig Lines</h3>
-      <p class="text-2xl font-bold text-pink-600 mt-1">From R100</p>
-      <p class="text-sm text-gray-600 mt-2">Simple & neat wig lines.</p>
-      <a href="https://wa.me/27YOURNUMBER?text=I%20want%20to%20book%20Plain%20Wig%20Lines"
-         class="mt-4 inline-block px-6 py-2 bg-pink-500 text-white rounded-full font-semibold shadow-md hover:bg-pink-600 transition">
-         Book Now
-      </a>
+      <p class="text-2xl font-bold text-pink-600 mt-2">From R100</p>
+      <p class="text-sm text-gray-600 mt-1">Simple & neat wig lines.</p>
+      <a href="https://wa.me/27YOURNUMBER?text=I%20want%20to%20book%20Plain%20Wig%20Lines" class="mt-4 inline-block px-6 py-2 bg-pink-500 text-white rounded-full font-semibold shadow-md hover:bg-pink-600 transition">Book Now</a>
     </div>
 
     <div class="premium-card p-6 rounded-3xl text-center shadow-xl" data-category="wigs">
       <h3 class="text-xl font-semibold text-gray-900">Wig Installation</h3>
-      <p class="text-2xl font-bold text-pink-600 mt-1">R250</p>
-      <p class="text-sm text-gray-600 mt-2">Professional wig install.</p>
-      <a href="https://wa.me/27YOURNUMBER?text=I%20want%20to%20book%20Wig%20Installation"
-         class="mt-4 inline-block px-6 py-2 bg-pink-500 text-white rounded-full font-semibold shadow-md hover:bg-pink-600 transition">
-         Book Now
-      </a>
+      <p class="text-2xl font-bold text-pink-600 mt-2">R250</p>
+      <p class="text-sm text-gray-600 mt-1">Professional wig install.</p>
+      <a href="https://wa.me/27YOURNUMBER?text=I%20want%20to%20book%20Wig%20Installation" class="mt-4 inline-block px-6 py-2 bg-pink-500 text-white rounded-full font-semibold shadow-md hover:bg-pink-600 transition">Book Now</a>
     </div>
 
     <!-- Premium Combos -->
     <div class="premium-card p-6 rounded-3xl text-center shadow-xl" data-category="premium">
       <h3 class="text-xl font-semibold text-gray-900">Goddess Knotless + Tint + Lashes</h3>
-      <p class="text-2xl font-bold text-pink-600 mt-1">R1000</p>
-      <p class="text-sm text-gray-600 mt-2">Full beauty combo.</p>
-      <a href="https://wa.me/27YOURNUMBER?text=I%20want%20to%20book%20Goddess%20Combo"
-         class="mt-4 inline-block px-6 py-2 bg-pink-500 text-white rounded-full font-semibold shadow-md hover:bg-pink-600 transition">
-         Book Now
-      </a>
+      <p class="text-2xl font-bold text-pink-600 mt-2">R1000</p>
+      <p class="text-sm text-gray-600 mt-1">Full beauty combo.</p>
+      <a href="https://wa.me/27YOURNUMBER?text=I%20want%20to%20book%20Goddess%20Combo" class="mt-4 inline-block px-6 py-2 bg-pink-500 text-white rounded-full font-semibold shadow-md hover:bg-pink-600 transition">Book Now</a>
     </div>
 
     <div class="premium-card p-6 rounded-3xl text-center shadow-xl" data-category="premium">
       <h3 class="text-xl font-semibold text-gray-900">French Curls + Tint + Lashes</h3>
-      <p class="text-2xl font-bold text-pink-600 mt-1">R1200</p>
-      <p class="text-sm text-gray-600 mt-2">Premium beauty set.</p>
-      <a href="https://wa.me/27YOURNUMBER?text=I%20want%20to%20book%20French%20Curls%20Combo"
-         class="mt-4 inline-block px-6 py-2 bg-pink-500 text-white rounded-full font-semibold shadow-md hover:bg-pink-600 transition">
-         Book Now
-      </a>
+      <p class="text-2xl font-bold text-pink-600 mt-2">R1200</p>
+      <p class="text-sm text-gray-600 mt-1">Premium beauty set.</p>
+      <a href="https://wa.me/27YOURNUMBER?text=I%20want%20to%20book%20French%20Curls%20Combo" class="mt-4 inline-block px-6 py-2 bg-pink-500 text-white rounded-full font-semibold shadow-md hover:bg-pink-600 transition">Book Now</a>
     </div>
 
     <div class="premium-card p-6 rounded-3xl text-center shadow-xl" data-category="premium">
       <h3 class="text-xl font-semibold text-gray-900">Installation + Eyelashes</h3>
-      <p class="text-2xl font-bold text-pink-600 mt-1">R400</p>
-      <p class="text-sm text-gray-600 mt-2">Install + natural lashes.</p>
-      <a href="https://wa.me/27YOURNUMBER?text=I%20want%20to%20book%20Installation%20and%20Eyelashes"
-         class="mt-4 inline-block px-6 py-2 bg-pink-500 text-white rounded-full font-semibold shadow-md hover:bg-pink-600 transition">
-         Book Now
-      </a>
+      <p class="text-2xl font-bold text-pink-600 mt-2">R400</p>
+      <p class="text-sm text-gray-600 mt-1">Install + natural lashes.</p>
+      <a href="https://wa.me/27YOURNUMBER?text=I%20want%20to%20book%20Installation%20and%20Eyelashes" class="mt-4 inline-block px-6 py-2 bg-pink-500 text-white rounded-full font-semibold shadow-md hover:bg-pink-600 transition">Book Now</a>
     </div>
 
   </div>
 </section>
 
+<!-- Styles -->
+<style>
+  .glass-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    transition: all 0.4s ease;
+  }
+
+  .premium-card {
+    background: linear-gradient(to bottom, #ffe6f2, #ffffff);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+  }
+
+  .premium-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(255, 105, 180, 0.3);
+  }
+</style>
+
+<!-- Filter Script -->
 <script>
   const buttons = document.querySelectorAll('.category-btn');
   const cards = document.querySelectorAll('#cardsContainer .premium-card');
@@ -363,17 +330,21 @@
       btn.classList.replace('bg-pink-100', 'bg-pink-500');
       btn.classList.replace('text-pink-600', 'text-white');
 
-      // Filter cards
+      // Animate filter cards
       cards.forEach(card => {
         if(category === 'all' || card.getAttribute('data-category') === category){
           card.style.display = 'block';
+          card.style.opacity = 0;
+          setTimeout(() => card.style.opacity = 1, 50);
         } else {
-          card.style.display = 'none';
+          card.style.opacity = 0;
+          setTimeout(() => card.style.display = 'none', 300);
         }
       });
     });
   });
 </script>
+
 
 
 <!-- FOOTER -->
