@@ -111,91 +111,346 @@
   </div>
 </section>
 
-<!-- SERVICES SECTION -->
-<section class="relative max-w-7xl mx-auto px-6 py-24">
-
-  <!-- Decorative absolute shapes -->
-  <div class="absolute top-10 left-10 w-32 h-32 bg-teal-200/30 rounded-full blur-2xl"></div>
-  <div class="absolute bottom-10 right-10 w-40 h-40 bg-purple-200/30 rounded-full blur-2xl"></div>
-  <div class="absolute top-1/2 left-1/2 w-24 h-24 bg-pink-200/40 rounded-full blur-xl -translate-x-1/2 -translate-y-1/2"></div>
-
-  <h2 class="text-4xl font-bold text-center mb-16 fade-up">Explore Our Expertise</h2>
-
-  <!-- SERVICES GRID -->
-  <div class="grid md:grid-cols-3 gap-12 relative z-10">
-
-    <!-- CARD -->
-    <div class="bg-white/70 backdrop-blur-xl rounded-3xl p-8 shadow-xl hover:shadow-3xl hover:-translate-y-3 transition-all duration-300 border border-white/40">
-      <i class='bx bxs-cut text-6xl text-teal-500 drop-shadow-md'></i>
-      <h3 class="mt-5 text-2xl font-semibold">Cuts & Styling</h3>
-      <p class="text-gray-600 mt-3 text-sm">From classic to modern cuts — precision styling for men, women, and children.</p>
-    </div>
-
-    <!-- CARD -->
-    <div class="bg-white/70 backdrop-blur-xl rounded-3xl p-8 shadow-xl hover:shadow-3xl hover:-translate-y-3 transition-all duration-300 border border-white/40">
-      <i class='bx bxs-paint text-6xl text-purple-500 drop-shadow-md'></i>
-      <h3 class="mt-5 text-2xl font-semibold">Color & Highlights</h3>
-      <p class="text-gray-600 mt-3 text-sm">Balayage, ombre, highlights, and creative coloring — express your style with brilliance.</p>
-    </div>
-
-    <!-- CARD -->
-    <div class="bg-white/70 backdrop-blur-xl rounded-3xl p-8 shadow-xl hover:shadow-3xl hover:-translate-y-3 transition-all duration-300 border border-white/40">
-      <i class='bx bxs-heart text-6xl text-pink-500 drop-shadow-md'></i>
-      <h3 class="mt-5 text-2xl font-semibold">Hair Treatments</h3>
-      <p class="text-gray-600 mt-3 text-sm">Deep conditioning, keratin, and scalp treatments that restore shine and strength.</p>
-    </div>
-
-    <!-- CARD -->
-    <div class="bg-white/70 backdrop-blur-xl rounded-3xl p-8 shadow-xl hover:shadow-3xl hover:-translate-y-3 transition-all duration-300 border border-white/40">
-      <i class='bx bxs-barbell text-6xl text-indigo-500 drop-shadow-md'></i>
-      <h3 class="mt-5 text-2xl font-semibold">Extensions & Weaves</h3>
-      <p class="text-gray-600 mt-3 text-sm">Premium tape-in, sew-in, and fusion extensions styled to perfection.</p>
-    </div>
-
-    <!-- CARD -->
-    <div class="bg-white/70 backdrop-blur-xl rounded-3xl p-8 shadow-xl hover:shadow-3xl hover:-translate-y-3 transition-all duration-300 border border-white/40">
-      <i class='bx bxs-crown text-6xl text-yellow-500 drop-shadow-md'></i>
-      <h3 class="mt-5 text-2xl font-semibold">Bridal & Events</h3>
-      <p class="text-gray-600 mt-3 text-sm">Custom wedding and event hairstyling packages for unforgettable moments.</p>
-    </div>
-
-    <!-- CARD -->
-    <div class="bg-white/70 backdrop-blur-xl rounded-3xl p-8 shadow-xl hover:shadow-3xl hover:-translate-y-3 transition-all duration-300 border border-white/40">
-      <i class='bx bxs-male text-6xl text-teal-600 drop-shadow-md'></i>
-      <h3 class="mt-5 text-2xl font-semibold">Gents Grooming</h3>
-      <p class="text-gray-600 mt-3 text-sm">Refined cuts, fades, beard trims, and grooming for men who value detail.</p>
-    </div>
-
+<!-- PREMIUM SERVICES — COMBINED ANIMATION SUITE -->
+<section id="premium-services" class="relative overflow-hidden py-28 bg-gradient-to-b from-gray-50 to-white">
+  <!-- BACKGROUND PARTICLES / PARALLAX LAYERS -->
+  <div id="parallax-layer-1" class="absolute inset-0 pointer-events-none -z-10"
+       style="background: radial-gradient(ellipse at 10% 10%, rgba(99,102,241,0.06), transparent 12%), radial-gradient(ellipse at 90% 80%, rgba(16,185,129,0.04), transparent 15%);">
   </div>
 
-  <!-- CUSTOM PACKAGES BOX -->
-  <div class="relative mt-20 bg-white/70 backdrop-blur-xl p-12 rounded-3xl shadow-xl border border-white/30 fade-up">
+  <!-- Organic morphing blobs (soft spa flow) -->
+  <svg class="absolute -top-20 left-1/2 transform -translate-x-1/2 -z-20 opacity-30" width="1200" height="600" viewBox="0 0 1200 600" fill="none" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <linearGradient id="g1" x1="0" x2="1">
+        <stop offset="0" stop-color="#7dd3fc" stop-opacity="0.18"></stop>
+        <stop offset="1" stop-color="#a78bfa" stop-opacity="0.18"></stop>
+      </linearGradient>
+    </defs>
+    <path id="blob" d="M300 50 C420 10 520 10 700 80 C900 160 980 260 900 350 C840 420 680 470 480 480 C260 490 120 380 90 260 C70 170 140 120 300 50Z" fill="url(#g1)">
+      <animate attributeName="d" dur="12s" repeatCount="indefinite"
+       values="
+        M300 50 C420 10 520 10 700 80 C900 160 980 260 900 350 C840 420 680 470 480 480 C260 490 120 380 90 260 C70 170 140 120 300 50Z;
+        M320 30 C480 5 560 40 730 120 C920 210 960 300 860 380 C800 440 640 470 430 480 C240 500 110 390 60 260 C50 150 140 110 320 30Z;
+        M280 60 C420 30 540 0 700 100 C920 180 1000 270 920 360 C880 430 700 480 480 480 C260 480 100 370 90 260 C80 150 180 110 280 60Z;
+        M300 50 C420 10 520 10 700 80 C900 160 980 260 900 350 C840 420 680 470 480 480 C260 490 120 380 90 260 C70 170 140 120 300 50Z" />
+    </path>
+  </svg>
 
-    <!-- Soft glow element -->
-    <div class="absolute -top-10 right-10 w-24 h-24 bg-teal-300/40 blur-xl rounded-full"></div>
-
-    <h3 class="text-3xl font-semibold text-center">Custom Packages</h3>
-    <p class="mt-3 text-gray-600 max-w-2xl mx-auto text-center">
-      We offer personalized packages for weddings, photo shoots, and special events. 
-      Contact us for tailor-made beauty experiences — including at-home services!
-    </p>
-
-    <!-- BUTTONS -->
-    <div class="mt-8 flex flex-wrap justify-center gap-6 relative z-10">
-      <a href="contact.html"
-         class="px-8 py-3 bg-gradient-to-r from-teal-500 to-purple-500 text-white font-semibold rounded-full hover:scale-105 transition-all shadow-lg">
-        Request a Custom Package
-      </a>
-
-      <a href="images/Price List Nelz.png" download
-         class="px-8 py-3 bg-gradient-to-r from-purple-500 to-teal-500 text-white font-semibold rounded-full hover:scale-105 transition-all shadow-lg">
-        Download Price List
-      </a>
-    </div>
-
+  <!-- Heading -->
+  <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
+    <h2 class="text-5xl md:text-6xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-teal-600 to-purple-600">
+      Explore Our Expertise
+    </h2>
+    <p class="mt-4 text-gray-600 max-w-2xl mx-auto text-lg">A premium, modern suite of salon services—delivered with craft, precision, and care. Hover and move your cursor to interact with the experience.</p>
   </div>
 
+  <!-- Services + Showcase -->
+  <div class="max-w-7xl mx-auto px-6 mt-14 grid lg:grid-cols-3 gap-10 items-start relative z-20">
+
+    <!-- LEFT COLUMN: FEATURE HIGHLIGHT / VIDEO OR IMAGE -->
+    <div class="col-span-1">
+      <div class="relative group">
+        <!-- framed video / image placeholder -->
+        <div class="relative rounded-2xl overflow-hidden bg-black shadow-2xl transform transition-all duration-700 will-change-transform"
+             data-magnetic data-tilt>
+          <!-- Replace with your uploaded video or poster image -->
+          <video id="promoVideo" class="w-full h-auto md:h-[420px] object-cover" playsinline muted loop autoplay>
+            <source src="your-video.mp4" type="video/mp4">
+            <!-- fallback image -->
+            <img src="images/salon-promo.jpg" alt="Salon" />
+          </video>
+
+          <!-- Neon gradient border -->
+          <div class="absolute inset-0 pointer-events-none rounded-2xl border-2 border-transparent"
+               style="box-shadow: 0 10px 30px rgba(99,102,241,0.12), inset 0 0 40px rgba(59,130,246,0.06);">
+            <div class="absolute -inset-px rounded-2xl" style="background: linear-gradient(120deg, rgba(45,212,191,0.35), rgba(168,85,247,0.25)); filter: blur(10px); opacity:0.9;"></div>
+          </div>
+
+          <!-- play icon (for mobile) -->
+          <button class="absolute left-6 bottom-6 bg-white/10 backdrop-blur-md text-white px-4 py-2 rounded-md flex items-center gap-3 hover:scale-105 transition"
+                  aria-label="Play video" onclick="toggleVideo()">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="opacity-95"><path d="M5 3v18l15-9L5 3z" fill="currentColor"/></svg>
+            <span class="text-sm">Play</span>
+          </button>
+
+        </div>
+
+        <!-- Caption card -->
+        <div class="mt-6 bg-white/60 backdrop-blur-md rounded-2xl p-5 shadow-lg border border-white/40">
+          <h4 class="text-xl font-semibold">A Decade of Craft</h4>
+          <p class="mt-2 text-gray-600 text-sm">Trusted by thousands, our team blends technique, premium products, and personal care for every client.</p>
+
+          <div class="mt-4 flex gap-3">
+            <a href="#booking" class="inline-block px-4 py-2 rounded-md bg-gradient-to-r from-teal-500 to-purple-500 text-white font-semibold shadow transition hover:scale-105">Book Now</a>
+            <a href="images/Price List Nelz.png" download class="inline-block px-4 py-2 rounded-md border border-gray-200 bg-white text-gray-800 font-medium hover:scale-105 transition">Download Prices</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MIDDLE & RIGHT: SERVICES GRID (larger interactive area) -->
+    <div class="col-span-2 grid md:grid-cols-2 gap-6">
+      <!-- Service Card Template -->
+      <!-- Repeat cards with different content/icons -->
+      <article class="service-panel" data-index="1" tabindex="0" aria-label="Cuts & Styling">
+        <div class="panel-inner">
+          <div class="icon-wrap">
+            <!-- SVG icon: scissors -->
+            <svg class="icon" viewBox="0 0 24 24" width="36" height="36" fill="none" aria-hidden="true">
+              <path d="M9 11c1.657 0 3-1.343 3-3S10.657 5 9 5 6 6.343 6 8s1.343 3 3 3zm6 0c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM2 20l6-6 8 8-6 6-8-8z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="panel-title">Cuts & Styling</h3>
+          <p class="panel-desc">Precision cuts, modern styling, and tailored looks for every client.</p>
+          <div class="panel-actions">
+            <a href="#book" class="btn-link">Request</a>
+            <span class="badge">From R350</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="service-panel" data-index="2" tabindex="0" aria-label="Color & Highlights">
+        <div class="panel-inner">
+          <div class="icon-wrap">
+            <svg class="icon" viewBox="0 0 24 24" width="36" height="36" fill="none"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7l3-7z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 class="panel-title">Color & Highlights</h3>
+          <p class="panel-desc">Balayage, ombré, vivids & couture color services with expert blending.</p>
+          <div class="panel-actions">
+            <a href="#book" class="btn-link">Request</a>
+            <span class="badge">From R600</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="service-panel" data-index="3" tabindex="0" aria-label="Hair Treatments">
+        <div class="panel-inner">
+          <div class="icon-wrap">
+            <svg class="icon" viewBox="0 0 24 24" width="36" height="36" fill="none"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke="currentColor" stroke-width="1.2"/></svg>
+          </div>
+          <h3 class="panel-title">Hair Treatments</h3>
+          <p class="panel-desc">Keratin, hydration and scalp therapies that restore shine and strength.</p>
+          <div class="panel-actions">
+            <a href="#book" class="btn-link">Request</a>
+            <span class="badge">From R450</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="service-panel" data-index="4" tabindex="0" aria-label="Extensions & Weaves">
+        <div class="panel-inner">
+          <div class="icon-wrap">
+            <svg class="icon" viewBox="0 0 24 24" width="36" height="36" fill="none"><path d="M3 12h18M12 3v18" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="panel-title">Extensions & Weaves</h3>
+          <p class="panel-desc">Premium tape-ins, sew-ins, and fusion extensions, custom blended.</p>
+          <div class="panel-actions">
+            <a href="#book" class="btn-link">Request</a>
+            <span class="badge">From R800</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="service-panel" data-index="5" tabindex="0" aria-label="Bridal & Events">
+        <div class="panel-inner">
+          <div class="icon-wrap">
+            <svg class="icon" viewBox="0 0 24 24" width="36" height="36" fill="none"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7l3-7z" stroke="currentColor" stroke-width="1.2"/></svg>
+          </div>
+          <h3 class="panel-title">Bridal & Events</h3>
+          <p class="panel-desc">Complete wedding styling and event-ready glam packages.</p>
+          <div class="panel-actions">
+            <a href="#book" class="btn-link">Request</a>
+            <span class="badge">Custom Pricing</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="service-panel" data-index="6" tabindex="0" aria-label="Gents Grooming">
+        <div class="panel-inner">
+          <div class="icon-wrap">
+            <svg class="icon" viewBox="0 0 24 24" width="36" height="36" fill="none"><path d="M4 21v-2a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v2" stroke="currentColor" stroke-width="1.2"/></svg>
+          </div>
+          <h3 class="panel-title">Gents Grooming</h3>
+          <p class="panel-desc">Fades, beard sculpting, and tailored grooming packages for men.</p>
+          <div class="panel-actions">
+            <a href="#book" class="btn-link">Request</a>
+            <span class="badge">From R300</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
 </section>
+
+<!-- CUSTOM STYLES & SMALL SCRIPT FOR INTERACTIONS -->
+<style>
+  /* Core panel design (tailwind utilities would exist; these rules enhance them) */
+  #premium-services { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
+
+  .service-panel {
+    --card-bg: rgba(255,255,255,0.55);
+    position: relative;
+    overflow: visible;
+    border-radius: 18px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.55), rgba(255,255,255,0.35));
+    box-shadow: 0 10px 30px rgba(2,6,23,0.06);
+    backdrop-filter: blur(8px) saturate(120%);
+    padding: 22px;
+    transition: transform 450ms cubic-bezier(.16,.84,.32,1), box-shadow 350ms;
+    transform-style: preserve-3d;
+    border: 1px solid rgba(255,255,255,0.6);
+    cursor: pointer;
+  }
+
+  .service-panel:focus { outline: none; box-shadow: 0 12px 40px rgba(45,212,191,0.12); transform: translateY(-8px) scale(1.01); }
+
+  .service-panel .panel-inner { display: flex; flex-direction: column; gap: 12px; height: 100%; }
+  .service-panel .icon-wrap { width: 64px; height: 64px; border-radius: 12px; display: flex; align-items: center; justify-content: center; transition: transform 420ms ease, box-shadow 420ms; background: linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02)); box-shadow: 0 6px 18px rgba(16,24,40,0.04); }
+  .service-panel .icon { color: #0f172a; opacity: 0.95; }
+
+  .panel-title { font-weight: 700; font-size: 1.125rem; color: #0f172a; }
+  .panel-desc { font-size: .95rem; color: #475569; margin-top: 2px; line-height:1.45; }
+
+  .panel-actions { display:flex; justify-content:space-between; align-items:center; margin-top:auto; gap:12px; }
+  .btn-link { text-decoration:none; font-weight:600; color: #0f172a; padding:8px 12px; border-radius:10px; border:1px solid rgba(15,23,42,0.06); background: linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.35)); transition: all .25s ease; }
+  .btn-link:hover { transform: translateY(-4px); box-shadow: 0 8px 26px rgba(99,102,241,0.08); color: #1e293b; }
+
+  .badge { background: rgba(15,23,42,0.06); color:#0f172a; padding:6px 8px; border-radius:8px; font-weight:600; font-size:.85rem; }
+
+  /* Magnetic + spotlight hover (combined) */
+  .service-panel::after{
+    content: "";
+    position: absolute;
+    top: -40%;
+    left: -40%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(600px 300px at var(--mx,50%) var(--my,50%), rgba(59,130,246,0.06), transparent 10%);
+    pointer-events: none;
+    transition: opacity .45s;
+    opacity: 0;
+    border-radius: 18px;
+    mix-blend-mode: screen;
+  }
+
+  .service-panel.is-active { transform: translateY(-12px) scale(1.02); box-shadow: 0 18px 50px rgba(59,130,246,0.08); }
+  .service-panel.is-active .icon-wrap { transform: translateY(-6px) scale(1.08) rotate(-3deg); box-shadow: 0 14px 30px rgba(99,102,241,0.09); }
+
+  /* 3D tilt support */
+  .service-panel[data-tilt] { transform-style: preserve-3d; will-change: transform; perspective: 1200px; }
+  
+  /* responsive tweaks */
+  @media (max-width: 1024px) {
+    .service-panel { padding: 18px; border-radius: 14px; }
+    .panel-title { font-size: 1.05rem; }
+  }
+
+  /* subtle floating particles (small circles) */
+  #parallax-layer-1::before, #parallax-layer-1::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    filter: blur(12px);
+    opacity: 0.6;
+  }
+  #parallax-layer-1::before {
+    width: 160px; height: 160px; left: 8%; top: 18%; background: rgba(124,58,237,0.08);
+  }
+  #parallax-layer-1::after {
+    width: 240px; height: 240px; right: 6%; bottom: 16%; background: rgba(34,197,94,0.06);
+  }
+</style>
+
+<script>
+/* Combined interaction script:
+   - Parallax on scroll (simple transform)
+   - Magnetic hover that pulls cards toward cursor
+   - 3D tilt on pointer move inside card
+   - Spotlight radial update per-card using CSS vars
+   - Small accessibility touches
+*/
+
+(() => {
+  const section = document.getElementById('premium-services');
+  const panels = Array.from(section.querySelectorAll('.service-panel'));
+  const parallax = document.getElementById('parallax-layer-1');
+  const video = document.getElementById('promoVideo');
+
+  /* Parallax: move background slightly on scroll */
+  function onScroll() {
+    const scrolled = window.scrollY;
+    if (parallax) {
+      parallax.style.transform = `translateY(${scrolled * -0.03}px)`;
+      parallax.style.opacity = `${Math.max(0.7 - scrolled / 2000, 0.35)}`;
+    }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  /* Magnetic + tilt */
+  panels.forEach(panel => {
+    // enable pointer tracking for desktop only
+    panel.addEventListener('pointermove', (e) => {
+      const rect = panel.getBoundingClientRect();
+      const px = (e.clientX - rect.left) / rect.width; // 0..1
+      const py = (e.clientY - rect.top) / rect.height; // 0..1
+      const cx = (px - 0.5) * 24; // tilt amount
+      const cy = (py - 0.5) * -12;
+
+      // set css variables used by pseudo-element spotlight
+      panel.style.setProperty('--mx', `${px * 100}%`);
+      panel.style.setProperty('--my', `${py * 100}%`);
+
+      // tilt + translate for magnetic effect
+      panel.style.transform = `perspective(1000px) rotateX(${cy}deg) rotateY(${cx}deg) translateZ(8px)`;
+      panel.style.transition = 'transform 120ms linear';
+
+      // "active" visual state
+      panel.classList.add('is-active');
+    });
+
+    panel.addEventListener('pointerleave', () => {
+      panel.style.transform = '';
+      panel.style.transition = 'transform 480ms cubic-bezier(.16,.84,.32,1)';
+      panel.classList.remove('is-active');
+      panel.style.removeProperty('--mx');
+      panel.style.removeProperty('--my');
+    });
+
+    // keyboard focus support
+    panel.addEventListener('focus', () => panel.classList.add('is-active'));
+    panel.addEventListener('blur', () => panel.classList.remove('is-active'));
+  });
+
+  /* Spotlight global follow: for subtle spotlight on container */
+  document.addEventListener('mousemove', (e) => {
+    const rect = section.getBoundingClientRect();
+    const relX = (e.clientX - rect.left) / rect.width * 100;
+    const relY = (e.clientY - rect.top) / rect.height * 100;
+    section.style.setProperty('--spot-x', `${relX}%`);
+    section.style.setProperty('--spot-y', `${relY}%`);
+  });
+
+  /* Simple video toggle for play/pause */
+  window.toggleVideo = function toggleVideo() {
+    if (!video) return;
+    if (video.paused) { video.play(); }
+    else { video.pause(); }
+  };
+
+  // small performance safety: pause video when out of viewport
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.target === video) {
+        if (!entry.isIntersecting && !video.paused) video.pause();
+      }
+    });
+  }, { threshold: 0.25 });
+  if (video) observer.observe(video);
+
+})();
+</script>
 
 
 <!-- FOOTER -->

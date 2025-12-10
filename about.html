@@ -171,80 +171,200 @@
 </section>
 
 
-<!-- MISSION & VALUES -->
-<section class="bg-gradient-to-br from-teal-50 to-purple-50 py-20">
-  <div class="max-w-7xl mx-auto px-6 text-center">
-    <h2 class="text-3xl font-bold mb-10">Our Mission & Values</h2>
-    <div class="grid md:grid-cols-3 gap-8">
-      <div class="bg-white rounded-2xl shadow-lg p-8 hover:-translate-y-2 transition">
-        <i class='bx bx-heart text-4xl text-teal-500 mb-4'></i>
-        <h3 class="font-semibold text-xl">Client Love</h3>
-        <p class="mt-2 text-gray-600 text-sm">We put our clients first in everything we do — ensuring comfort, care, and confidence.</p>
+<section class="relative overflow-hidden py-24 bg-gradient-to-br from-teal-50 via-white to-purple-50">
+
+  <!-- Decorative Blobs -->
+  <div class="absolute top-0 left-0 w-64 h-64 bg-purple-300 opacity-20 blur-3xl rounded-full"></div>
+  <div class="absolute bottom-0 right-0 w-64 h-64 bg-teal-300 opacity-20 blur-3xl rounded-full"></div>
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <h2 class="text-4xl font-bold text-center mb-16">Our Mission & Values</h2>
+
+    <!-- 2 COLUMN GRID (switched order: video first, then cards) -->
+    <div class="grid md:grid-cols-2 gap-14 items-center">
+
+      <!-- LEFT SIDE — VIDEO SHOWCASE -->
+      <div class="relative group order-1 md:order-none">
+
+        <!-- Glow Border Animation -->
+        <div class="absolute inset-0 bg-gradient-to-br from-teal-400 to-purple-500 rounded-3xl opacity-40 blur-xl 
+                    group-hover:opacity-60 group-hover:blur-2xl transition-all duration-700"></div>
+
+        <!-- VIDEO FRAME -->
+        <div class="relative bg-white rounded-3xl overflow-hidden shadow-2xl p-2">
+          
+          <!-- Video Container -->
+          <div class="relative rounded-2xl overflow-hidden">
+
+            <!-- Replace with your uploaded video -->
+            <iframe 
+              class="w-full h-72 md:h-96 rounded-2xl"
+              src="https://www.youtube.com/embed/Bey4XXJAqS8"
+              title="Salon Promo Video"
+              frameborder="0"
+              allowfullscreen>
+            </iframe>
+
+            <!-- Overlay text -->
+            <div class="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-end p-6 
+                        opacity-0 group-hover:opacity-100 transition-all duration-500">
+              <h3 class="text-white text-2xl font-semibold drop-shadow">Experience The Beauty</h3>
+              <p class="text-gray-200 text-sm mt-1 max-w-sm">
+                A short journey through our passion, craft, and client-centered vision.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
-      <div class="bg-white rounded-2xl shadow-lg p-8 hover:-translate-y-2 transition">
-        <i class='bx bx-leaf text-4xl text-teal-500 mb-4'></i>
-        <h3 class="font-semibold text-xl">Sustainability</h3>
-        <p class="mt-2 text-gray-600 text-sm">We proudly use sustainable and cruelty-free products to protect both you and the planet.</p>
+
+      <!-- RIGHT SIDE — CARDS -->
+      <div class="space-y-10 order-2 md:order-none">
+
+        <!-- CARD -->
+        <div class="bg-white rounded-3xl shadow-xl p-10 border border-teal-100 
+                    hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 relative">
+          <div class="absolute -top-6 left-6 bg-teal-500 text-white p-3 rounded-2xl shadow-lg">
+            <i class="bx bx-heart text-3xl"></i>
+          </div>
+          <h3 class="font-semibold text-2xl mt-6">Client Love</h3>
+          <p class="mt-3 text-gray-600">We put our clients first in every decision, ensuring comfort, care, and confidence.</p>
+        </div>
+
+        <!-- CARD -->
+        <div class="bg-white rounded-3xl shadow-xl p-10 border border-teal-100 
+                    hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 relative">
+          <div class="absolute -top-6 left-6 bg-teal-500 text-white p-3 rounded-2xl shadow-lg">
+            <i class="bx bx-leaf text-3xl"></i>
+          </div>
+          <h3 class="font-semibold text-2xl mt-6">Sustainability</h3>
+          <p class="mt-3 text-gray-600">We use eco-friendly, cruelty-free products for professional beauty without harm.</p>
+        </div>
+
+        <!-- CARD -->
+        <div class="bg-white rounded-3xl shadow-xl p-10 border border-teal-100 
+                    hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 relative">
+          <div class="absolute -top-6 left-6 bg-teal-500 text-white p-3 rounded-2xl shadow-lg">
+            <i class="bx bx-star text-3xl"></i>
+          </div>
+          <h3 class="font-semibold text-2xl mt-6">Excellence</h3>
+          <p class="mt-3 text-gray-600">We consistently elevate service quality through innovation and advanced techniques.</p>
+        </div>
+
       </div>
-      <div class="bg-white rounded-2xl shadow-lg p-8 hover:-translate-y-2 transition">
-        <i class='bx bx-star text-4xl text-teal-500 mb-4'></i>
-        <h3 class="font-semibold text-xl">Excellence</h3>
-        <p class="mt-2 text-gray-600 text-sm">Our team strives for perfection through continuous learning and innovation.</p>
-      </div>
+
     </div>
   </div>
 </section>
 
 
-<!-- TIMELINE / SMOOTH ACCORDION -->
-<section class="max-w-5xl mx-auto px-6 py-20">
-  <h2 class="text-3xl font-bold text-center mb-10">Our Journey</h2>
 
-  <div class="space-y-4">
+<!-- OUR JOURNEY — TWO COLUMN LAYOUT -->
+<section class="max-w-7xl mx-auto px-6 py-24">
 
-    <!-- Timeline Item -->
-    <div class="border rounded-xl shadow-lg overflow-hidden">
-      <button class="w-full flex justify-between items-center px-6 py-4 bg-teal-100 hover:bg-teal-200 transition-all focus:outline-none timeline-btn">
-        <span class="font-semibold text-gray-800">2014: Nelz Hair Dresser opens</span>
-        <i class="bx bx-chevron-down text-2xl text-gray-600 transition-transform duration-300"></i>
-      </button>
-      <div class="px-6 py-0 text-gray-700 timeline-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-        Started in Cape Town with a mission to redefine beauty. Our focus has always been on quality, professionalism, and making every client feel confident.
+  <h2 class="text-4xl font-bold text-center mb-16">Our Journey</h2>
+
+  <div class="grid md:grid-cols-2 gap-14 items-start">
+
+    <!-- LEFT: VERTICAL TIMELINE -->
+    <div class="relative border-l-4 border-teal-400 ml-6 space-y-12">
+
+      <!-- ITEM -->
+      <div class="ml-8 group transition-transform duration-300 hover:-translate-y-1">
+        <div class="absolute -left-6 top-0 w-10 h-10 bg-teal-500 rounded-full shadow-lg 
+                    flex items-center justify-center text-white group-hover:scale-110 transition-transform">
+          <i class="bx bx-check"></i>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 group-hover:text-teal-600 transition-colors">
+          2014 — Nelz Hairdresser Opens
+        </h3>
+        <p class="mt-2 text-gray-600 leading-relaxed">
+          Started in Cape Town with a mission to redefine beauty using quality, professionalism, and premium care.
+        </p>
       </div>
+
+      <!-- ITEM -->
+      <div class="ml-8 group transition-transform duration-300 hover:-translate-y-1">
+        <div class="absolute -left-6 top-0 w-10 h-10 bg-teal-500 rounded-full shadow-lg 
+                    flex items-center justify-center text-white group-hover:scale-110 transition-transform">
+          <i class="bx bx-spray-can"></i>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 group-hover:text-teal-600 transition-colors">
+          2017 — Advanced Services Launched
+        </h3>
+        <p class="mt-2 text-gray-600 leading-relaxed">
+          Introduced expert coloring, precision highlights, and keratin treatments to elevate client experience.
+        </p>
+      </div>
+
+      <!-- ITEM -->
+      <div class="ml-8 group transition-transform duration-300 hover:-translate-y-1">
+        <div class="absolute -left-6 top-0 w-10 h-10 bg-teal-500 rounded-full shadow-lg 
+                    flex items-center justify-center text-white group-hover:scale-110 transition-transform">
+          <i class="bx bx-devices"></i>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 group-hover:text-teal-600 transition-colors">
+          2020 — Expansion & Online Booking
+        </h3>
+        <p class="mt-2 text-gray-600 leading-relaxed">
+          Expanded salon capacity and launched digital booking for smooth, modern client scheduling.
+        </p>
+      </div>
+
+      <!-- ITEM -->
+      <div class="ml-8 group transition-transform duration-300 hover:-translate-y-1">
+        <div class="absolute -left-6 top-0 w-10 h-10 bg-teal-500 rounded-full shadow-lg 
+                    flex items-center justify-center text-white group-hover:scale-110 transition-transform">
+          <i class="bx bx-happy"></i>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 group-hover:text-teal-600 transition-colors">
+          2023 — 10,000 Happy Clients
+        </h3>
+        <p class="mt-2 text-gray-600 leading-relaxed">
+          Reached a major milestone, proudly serving over 10,000 loyal clients across Cape Town.
+        </p>
+      </div>
+
     </div>
 
-    <div class="border rounded-xl shadow-lg overflow-hidden">
-      <button class="w-full flex justify-between items-center px-6 py-4 bg-teal-100 hover:bg-teal-200 transition-all focus:outline-none timeline-btn">
-        <span class="font-semibold text-gray-800">2017: Advanced services introduced</span>
-        <i class="bx bx-chevron-down text-2xl text-gray-600 transition-transform duration-300"></i>
-      </button>
-      <div class="px-6 py-0 text-gray-700 timeline-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-        Introduced advanced coloring, highlights, and keratin treatments to provide premium hair care solutions.
-      </div>
-    </div>
+    <!-- RIGHT: IMAGE WITH OVERLAY TEXT -->
+    <div class="relative rounded-3xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-all duration-500">
+      
+      <!-- BACKGROUND IMAGE -->
+      <img src="images/landing.jpg"
+           alt="Salon Journey Image"
+           class="w-full h-full object-cover">
 
-    <div class="border rounded-xl shadow-lg overflow-hidden">
-      <button class="w-full flex justify-between items-center px-6 py-4 bg-teal-100 hover:bg-teal-200 transition-all focus:outline-none timeline-btn">
-        <span class="font-semibold text-gray-800">2020: Expanded and online booking</span>
-        <i class="bx bx-chevron-down text-2xl text-gray-600 transition-transform duration-300"></i>
-      </button>
-      <div class="px-6 py-0 text-gray-700 timeline-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-        Expanded our salon space and launched online booking options to make scheduling easier for clients.
-      </div>
-    </div>
+      <!-- OVERLAY -->
+      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
 
-    <div class="border rounded-xl shadow-lg overflow-hidden">
-      <button class="w-full flex justify-between items-center px-6 py-4 bg-teal-100 hover:bg-teal-200 transition-all focus:outline-none timeline-btn">
-        <span class="font-semibold text-gray-800">2023: 10,000 happy clients</span>
-        <i class="bx bx-chevron-down text-2xl text-gray-600 transition-transform duration-300"></i>
-      </button>
-      <div class="px-6 py-0 text-gray-700 timeline-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-        Celebrated serving 10,000 happy clients across Cape Town! Our dedication to excellence continues to grow.
+      <!-- TEXT ON IMAGE -->
+      <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-6">
+        <h3 class="text-white text-3xl font-bold mb-4 drop-shadow-lg animate-fadeIn">
+          A Decade of Beauty & Growth
+        </h3>
+        <p class="text-gray-200 text-lg max-w-md animate-fadeInSlow">
+          From a small Cape Town salon to a trusted brand serving thousands of clients with passion and excellence.
+        </p>
       </div>
+
     </div>
 
   </div>
 </section>
+
+<!-- Simple custom animations -->
+<style>
+  @keyframes fadeIn { from {opacity: 0; transform: translateY(20px);} to {opacity: 1; transform: translateY(0);} }
+  @keyframes fadeInSlow { from {opacity: 0;} to {opacity: 1;} }
+
+  .animate-fadeIn { animation: fadeIn 1s ease-out forwards; }
+  .animate-fadeInSlow { animation: fadeInSlow 2s ease-out forwards; }
+</style>
+
 
 <script>
   // Smooth Accordion
