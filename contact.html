@@ -252,6 +252,7 @@
         </div>
 
       </form>
+      
     </div>
 
     <!-- RIGHT – MAP & CONTACT -->
@@ -276,6 +277,92 @@
 
   </div>
 </section>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("n6sFJ-YeoxZpqc_lE"); // Your EmailJS public key
+  })();
+
+  document.getElementById('multiForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const form = this;
+    const formData = new FormData(form);
+
+    // Collect all add-ons checked (step 2)
+    const addonsChecked = form.querySelectorAll('input[name="addons"]:checked');
+    const addons = Array.from(addonsChecked).map(a => a.value).join(', ') || 'None';
+
+    // Notes (step 3)
+    const notes = form.querySelector('textarea[name="notes"]').value || 'None';
+
+    const templateParams = {
+      name: formData.get('name'),
+      email: formData.get('email'),
+      phone: formData.get('phone') || 'N/A',
+      contactMethod: formData.get('contactMethod') || 'N/A',
+      clientType: formData.get('clientType') || 'N/A',
+      service: formData.get('service') || 'N/A',
+      date: formData.get('date') || 'N/A',
+      time: formData.get('time') || 'N/A',
+      hairLength: formData.get('hairLength') || 'N/A',
+      addons: addons,
+      notes: notes,
+      timeSubmitted: new Date().toLocaleString()
+    };
+
+    emailjs.send('service_2bx3mun', 'template_pzfz8ea', templateParams)
+      .then(function(response) {
+        alert('Booking request sent successfully! We will contact you soon.');
+        form.reset();
+        // Reset steps to Step 1
+        document.querySelectorAll('.step').forEach(step => step.classList.add('hidden'));
+        document.getElementById('step1').classList.remove('hidden');
+        document.getElementById('step1Indicator').classList.add('bg-pink-500');
+        document.getElementById('step2Indicator').classList.remove('bg-pink-500');
+        document.getElementById('step3Indicator').classList.remove('bg-pink-500');
+      }, function(error) {
+        alert('Oops! Something went wrong. Please try again.');
+        console.error(error);
+      });
+  });
+
+  // Multi-step navigation function
+  function nextStep(step) {
+    const steps = document.querySelectorAll('.step');
+    steps.forEach(s => s.classList.add('hidden'));
+    document.getElementById('step' + step).classList.remove('hidden');
+
+    // Update progress bar
+    document.getElementById('step1Indicator').classList.remove('bg-pink-500');
+    document.getElementById('step2Indicator').classList.remove('bg-pink-500');
+    document.getElementById('step3Indicator').classList.remove('bg-pink-500');
+
+    if(step >= 1) document.getElementById('step1Indicator').classList.add('bg-pink-500');
+    if(step >= 2) document.getElementById('step2Indicator').classList.add('bg-pink-500');
+    if(step >= 3) document.getElementById('step3Indicator').classList.add('bg-pink-500');
+
+    // Update preview box in step 3
+    if(step === 3){
+      const preview = document.getElementById('previewBox');
+      const formData = new FormData(document.getElementById('multiForm'));
+      const addonsChecked = document.querySelectorAll('input[name="addons"]:checked');
+      const addons = Array.from(addonsChecked).map(a => a.value).join(', ') || 'None';
+      preview.innerHTML = `
+        <p><strong>Name:</strong> ${formData.get('name')}</p>
+        <p><strong>Email:</strong> ${formData.get('email')}</p>
+        <p><strong>Phone:</strong> ${formData.get('phone') || 'N/A'}</p>
+        <p><strong>Preferred Contact Method:</strong> ${formData.get('contactMethod')}</p>
+        <p><strong>Client Type:</strong> ${formData.get('clientType')}</p>
+        <p><strong>Service:</strong> ${formData.get('service')}</p>
+        <p><strong>Date & Time:</strong> ${formData.get('date')} at ${formData.get('time')}</p>
+        <p><strong>Hair Length:</strong> ${formData.get('hairLength')}</p>
+        <p><strong>Add-ons:</strong> ${addons}</p>
+      `;
+    }
+  }
+</script>
+
 
 <!-- MULTI-STEP SCRIPT WITH VALIDATION -->
 <script>
