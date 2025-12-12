@@ -280,7 +280,7 @@
       <div class="flip-card-inner relative w-full h-full transition-transform duration-700 transform-style-3d">
         <!-- Front -->
         <div class="flip-card-front flex flex-col items-center justify-center bg-white/80 backdrop-blur-md rounded-3xl p-8 shadow-2xl text-center">
-          <div class="bg-pink-100 rounded-full w-20 h-20 flex items-center justify-center mb-6 text-pink-600 transform transition-transform duration-500 group-hover:scale-110">
+          <div class="bg-pink-100 rounded-full w-20 h-20 flex items-center justify-center mb-6 text-pink-600 transition-transform duration-500 group-hover:scale-110">
             <!-- Icon: Braids -->
             <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
@@ -300,12 +300,11 @@
       </div>
     </div>
 
-    
     <!-- Service Card 2: Wigs & Extensions -->
     <div class="flip-card w-full h-80 perspective animate-slideUp delay-150">
       <div class="flip-card-inner relative w-full h-full transition-transform duration-700 transform-style-3d">
         <div class="flip-card-front flex flex-col items-center justify-center bg-white/80 backdrop-blur-md rounded-3xl p-8 shadow-2xl text-center">
-          <div class="bg-pink-100 rounded-full w-20 h-20 flex items-center justify-center mb-6 text-pink-600 transform transition-transform duration-500 group-hover:scale-110">
+          <div class="bg-pink-100 rounded-full w-20 h-20 flex items-center justify-center mb-6 text-pink-600 transition-transform duration-500 group-hover:scale-110">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 12c2.28 0 4-2.28 4-4s-1.72-4-4-4-4 1.72-4 4 1.72 4 4 4z" />
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 20v-2a4 4 0 014-4h4a4 4 0 014 4v2" />
@@ -327,7 +326,7 @@
     <div class="flip-card w-full h-80 perspective animate-slideUp delay-300">
       <div class="flip-card-inner relative w-full h-full transition-transform duration-700 transform-style-3d">
         <div class="flip-card-front flex flex-col items-center justify-center bg-white/80 backdrop-blur-md rounded-3xl p-8 shadow-2xl text-center">
-          <div class="bg-pink-100 rounded-full w-20 h-20 flex items-center justify-center mb-6 text-pink-600 transform transition-transform duration-500 group-hover:scale-110">
+          <div class="bg-pink-100 rounded-full w-20 h-20 flex items-center justify-center mb-6 text-pink-600 transition-transform duration-500 group-hover:scale-110">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12h2m4 0h-2m-6 0h-2M12 12v2m0 4v-2m0-4V6m0-4v2" />
             </svg>
@@ -344,9 +343,7 @@
       </div>
     </div>
 
-<!-- Service Card 3: Premium Hair & Beauty Combo --> <div class="relative w-full h-80 perspective animate-slideUp delay-300 group"> <div class="relative w-full h-full rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-tr from-purple-50 to-pink-100 transform transition-transform duration-700 group-hover:scale-105"> <!-- Floating Ribbon Badge --> <div class="absolute top-4 left-4 bg-purple-500 text-white font-bold px-3 py-1 rounded-lg animate-pulse">Premium</div> <!-- Decorative Icon --> <div class="absolute top-6 right-1/2 translate-x-1/2 w-16 h-16 rounded-full bg-purple-200 flex items-center justify-center animate-bounce"> <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-purple-700" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /> </svg> </div> <!-- Card Content --> <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-6"> <h3 class="text-2xl font-bold text-purple-700 mb-2">French Curls + Brow & Lashes</h3> <p class="text-gray-700 text-sm mb-4">Enjoy French curls with eyebrow tint and cluster eyelashes for a complete glamorous transformation.</p> <span class="text-gray-800 font-medium mb-2">From R1200</span> <a href="pricing.html" class="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors duration-300">Book Now</a> </div> <!-- Background Glow --> <div class="absolute -top-10 -left-10 w-40 h-40 bg-purple-100 opacity-30 rounded-full blur-3xl animate-pulse-slow"></div> <div class="absolute -bottom-10 -right-10 w-56 h-56 bg-pink-200 opacity-30 rounded-full blur-3xl animate-pulse-slow"></div> </div> </div>
 
-    
   </div>
 
   <!-- Decorative animated background glow -->
@@ -357,10 +354,21 @@
 <style>
 /* Flip card CSS */
 .perspective { perspective: 1000px; }
-.flip-card-inner { transform-style: preserve-3d; transition: transform 0.7s; }
-.flip-card-front, .flip-card-back { backface-visibility: hidden; position: absolute; width: 100%; height: 100%; top:0; left:0; }
+.flip-card-inner {
+  transform-style: preserve-3d;
+  transition: transform 0.7s;
+}
+.flip-card-front, .flip-card-back {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0; left:0;
+}
 .flip-card-back { transform: rotateY(180deg); }
-.flip-card:hover .flip-card-inner { transform: rotateY(180deg); }
+
+/* Flip when the 'flipped' class is added */
+.flip-card-inner.flipped { transform: rotateY(180deg); }
 
 /* Tailwind animations */
 @keyframes slideUp {0%{opacity:0;transform:translateY(40px);}100%{opacity:1;transform:translateY(0);}}
@@ -370,15 +378,30 @@
 @keyframes pulseSlow{0%,100%{transform:scale(1);opacity:0.3;}50%{transform:scale(1.1);opacity:0.5;}}
 .animate-pulse-slow{animation:pulseSlow 3s ease-in-out infinite;}
 .backface-hidden { backface-visibility: hidden; }
+
+/* Optional: scale on hover for desktop */
+@media (hover: hover) {
+  .flip-card:hover .flip-card-inner { transform: rotateY(180deg); }
+}
 </style>
 
 <script>
-// Flip on scroll for mobile
+// Flip on click/tap
 const cards = document.querySelectorAll('.flip-card');
+cards.forEach(card => {
+  card.addEventListener('click', () => {
+    card.querySelector('.flip-card-inner').classList.toggle('flipped');
+  });
+});
+
+// Flip on scroll
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
+    const inner = entry.target.querySelector('.flip-card-inner');
     if(entry.isIntersecting) {
-      entry.target.querySelector('.flip-card-inner').classList.add('rotateY-180');
+      inner.classList.add('flipped');
+    } else {
+      inner.classList.remove('flipped');
     }
   });
 }, { threshold: 0.5 });
@@ -387,46 +410,247 @@ cards.forEach(card => observer.observe(card));
 </script>
 
 
-    <!-- TESTIMONIALS -->
-    <section class="bg-gradient-to-br from-purple-50 to-teal-50 py-20">
-      <div class="max-w-7xl mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-12">What Our Clients Say</h2>
-        <div class="grid md:grid-cols-3 gap-8">
-          <div class="bg-white p-8 rounded-2xl shadow-xl hover:-translate-y-2 transition">
-            <p class="text-gray-600 italic">"The best salon experience I’ve ever had. Nelz made me feel amazing!"</p>
-            <div class="mt-6 flex items-center gap-3">
-              <img src="images/landing.jpg" class="w-12 h-12 rounded-full object-cover" alt="">
-              <div>
-                <div class="font-semibold">Lindiwe M.</div>
-                <div class="text-xs text-gray-500">Regular client</div>
-              </div>
-            </div>
-          </div>
 
-          <div class="bg-white p-8 rounded-2xl shadow-xl hover:-translate-y-2 transition">
-            <p class="text-gray-600 italic">"Professional staff and stunning results. I’ll definitely return!"</p>
-            <div class="mt-6 flex items-center gap-3">
-              <img src="images/landing.jpg" class="w-12 h-12 rounded-full object-cover" alt="">
-              <div>
-                <div class="font-semibold">Sihle P.</div>
-                <div class="text-xs text-gray-500">Customer since 2021</div>
-              </div>
-            </div>
-          </div>
 
-          <div class="bg-white p-8 rounded-2xl shadow-xl hover:-translate-y-2 transition">
-            <p class="text-gray-600 italic">"A luxurious experience every time. I love their creativity!"</p>
-            <div class="mt-6 flex items-center gap-3">
-              <img src="images/landing.jpg" class="w-12 h-12 rounded-full object-cover" alt="">
-              <div>
-                <div class="font-semibold">Thabo R.</div>
-                <div class="text-xs text-gray-500">Visited 2024</div>
-              </div>
-            </div>
+<!-- TESTIMONIALS -->
+<section class="bg-gradient-to-br from-purple-50 to-teal-50 py-20 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
+      What Our Clients Say
+    </h2>
+
+    <!-- Scrollable Wrapper -->
+    <div class="relative w-full overflow-x-auto overflow-y-hidden scroll-smooth py-4">
+
+      <!-- Auto-scrolling track -->
+      <div class="flex gap-8 min-w-max animate-smoothSlide">
+
+        <!-- 1 -->
+        <div class="bg-white p-8 rounded-2xl shadow-xl w-80 shrink-0">
+          <p class="text-gray-600 italic">"My knotless braids came out so neat! I received compliments everywhere I went."</p>
+          <div class="mt-6">
+            <div class="font-semibold">Lindiwe M.</div>
+            <div class="text-xs text-gray-500">Braids Client</div>
+            <div class="mt-2 text-yellow-400 text-lg">★★★★★</div>
           </div>
         </div>
+
+        <!-- 2 -->
+        <div class="bg-white p-8 rounded-2xl shadow-xl w-80 shrink-0">
+          <p class="text-gray-600 italic">"Nelz installed my frontal wig perfectly. It looked natural and flawless."</p>
+          <div class="mt-6">
+            <div class="font-semibold">Ayanda P.</div>
+            <div class="text-xs text-gray-500">Wig Installation</div>
+            <div class="mt-2 text-yellow-400 text-lg">★★★★★</div>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="bg-white p-8 rounded-2xl shadow-xl w-80 shrink-0">
+          <p class="text-gray-600 italic">"The lash extensions are lightweight and beautiful. Best I’ve had!"</p>
+          <div class="mt-6">
+            <div class="font-semibold">Thuli S.</div>
+            <div class="text-xs text-gray-500">Lash Extensions</div>
+            <div class="mt-2 text-yellow-400 text-lg">★★★★☆</div>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="bg-white p-8 rounded-2xl shadow-xl w-80 shrink-0">
+          <p class="text-gray-600 italic">"They did my boho braids and I am obsessed. Neat, soft, and long-lasting."</p>
+          <div class="mt-6">
+            <div class="font-semibold">Nomsa D.</div>
+            <div class="text-xs text-gray-500">Boho Braids</div>
+            <div class="mt-2 text-yellow-400 text-lg">★★★★★</div>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="bg-white p-8 rounded-2xl shadow-xl w-80 shrink-0">
+          <p class="text-gray-600 italic">"My butterfly locs were done so beautifully. I’ll be back soon."</p>
+          <div class="mt-6">
+            <div class="font-semibold">Jessica K.</div>
+            <div class="text-xs text-gray-500">Butterfly Locs</div>
+            <div class="mt-2 text-yellow-400 text-lg">★★★★☆</div>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="bg-white p-8 rounded-2xl shadow-xl w-80 shrink-0">
+          <p class="text-gray-600 italic">"I love how they styled my wig. I left feeling like a new woman."</p>
+          <div class="mt-6">
+            <div class="font-semibold">Amanda Z.</div>
+            <div class="text-xs text-gray-500">Wig Styling</div>
+            <div class="mt-2 text-yellow-400 text-lg">★★★★★</div>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="bg-white p-8 rounded-2xl shadow-xl w-80 shrink-0">
+          <p class="text-gray-600 italic">"My cornrows were neat and painless. Amazing salon!"</p>
+          <div class="mt-6">
+            <div class="font-semibold">Precious L.</div>
+            <div class="text-xs text-gray-500">Cornrows</div>
+            <div class="mt-2 text-yellow-400 text-lg">★★★★★</div>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="bg-white p-8 rounded-2xl shadow-xl w-80 shrink-0">
+          <p class="text-gray-600 italic">"I got a silk press and my hair has never felt so soft."</p>
+          <div class="mt-6">
+            <div class="font-semibold">Ayanda G.</div>
+            <div class="text-xs text-gray-500">Silk Press</div>
+            <div class="mt-2 text-yellow-400 text-lg">★★★★☆</div>
+          </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="bg-white p-8 rounded-2xl shadow-xl w-80 shrink-0">
+          <p class="text-gray-600 italic">"The lash lift was perfect. Natural, curled, and long-lasting."</p>
+          <div class="mt-6">
+            <div class="font-semibold">Mpho B.</div>
+            <div class="text-xs text-gray-500">Lash Lift</div>
+            <div class="mt-2 text-yellow-400 text-lg">★★★★★</div>
+          </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="bg-white p-8 rounded-2xl shadow-xl w-80 shrink-0">
+          <p class="text-gray-600 italic">"Amazing wig customization. They bleached and plucked it perfectly."</p>
+          <div class="mt-6">
+            <div class="font-semibold">Chantel V.</div>
+            <div class="text-xs text-gray-500">Wig Customization</div>
+            <div class="mt-2 text-yellow-400 text-lg">★★★★★</div>
+          </div>
+        </div>
+
+        <!-- 11 -->
+        <div class="bg-white p-8 rounded-2xl shadow-xl w-80 shrink-0">
+          <p class="text-gray-600 italic">"My small knotless braids lasted 7 weeks. So neat!"</p>
+          <div class="mt-6">
+            <div class="font-semibold">Bonnie S.</div>
+            <div class="text-xs text-gray-500">Knotless Braids</div>
+            <div class="mt-2 text-yellow-400 text-lg">★★★★★</div>
+          </div>
+        </div>
+
+        <!-- 12 -->
+        <div class="bg-white p-8 rounded-2xl shadow-xl w-80 shrink-0">
+          <p class="text-gray-600 italic">"They did an incredible wig revamp for me. New and fresh!"</p>
+          <div class="mt-6">
+            <div class="font-semibold">Hloni R.</div>
+            <div class="text-xs text-gray-500">Wig Revamp</div>
+            <div class="mt-2 text-yellow-400 text-lg">★★★★☆</div>
+          </div>
+        </div>
+
+        <!-- 13 -->
+        <div class="bg-white p-8 rounded-2xl shadow-xl w-80 shrink-0">
+          <p class="text-gray-600 italic">"I loved my lash refill. Clean and professional."</p>
+          <div class="mt-6">
+            <div class="font-semibold">Tebogo H.</div>
+            <div class="text-xs text-gray-500">Lash Refill</div>
+            <div class="mt-2 text-yellow-400 text-lg">★★★★★</div>
+          </div>
+        </div>
+
+        <!-- 14 -->
+        <div class="bg-white p-8 rounded-2xl shadow-xl w-80 shrink-0">
+          <p class="text-gray-600 italic">"They installed my closure wig so beautifully. I’m obsessed."</p>
+          <div class="mt-6">
+            <div class="font-semibold">Queen N.</div>
+            <div class="text-xs text-gray-500">Closure Wig Install</div>
+            <div class="mt-2 text-yellow-400 text-lg">★★★★★</div>
+          </div>
+        </div>
+
+        <!-- 15 -->
+        <div class="bg-white p-8 rounded-2xl shadow-xl w-80 shrink-0">
+          <p class="text-gray-600 italic">"Fast and neat braiding. Zero pain. Amazing service."</p>
+          <div class="mt-6">
+            <div class="font-semibold">Dineo P.</div>
+            <div class="text-xs text-gray-500">Braids</div>
+            <div class="mt-2 text-yellow-400 text-lg">★★★★☆</div>
+          </div>
+        </div>
+
+        <!-- 16 -->
+        <div class="bg-white p-8 rounded-2xl shadow-xl w-80 shrink-0">
+          <p class="text-gray-600 italic">"My frontal install looked completely natural. Highly skilled stylists."</p>
+          <div class="mt-6">
+            <div class="font-semibold">Karabo M.</div>
+            <div class="text-xs text-gray-500">Frontal Install</div>
+            <div class="mt-2 text-yellow-400 text-lg">★★★★★</div>
+          </div>
+        </div>
+
+        <!-- 17 -->
+        <div class="bg-white p-8 rounded-2xl shadow-xl w-80 shrink-0">
+          <p class="text-gray-600 italic">"Their lash extensions are stunning and long-lasting."</p>
+          <div class="mt-6">
+            <div class="font-semibold">Melisa T.</div>
+            <div class="text-xs text-gray-500">Lashes</div>
+            <div class="mt-2 text-yellow-400 text-lg">★★★★★</div>
+          </div>
+        </div>
+
+        <!-- 18 -->
+        <div class="bg-white p-8 rounded-2xl shadow-xl w-80 shrink-0">
+          <p class="text-gray-600 italic">"I loved my two-line cornrows. Clean and professional work."</p>
+          <div class="mt-6">
+            <div class="font-semibold">Kelebogile S.</div>
+            <div class="text-xs text-gray-500">Cornrows</div>
+            <div class="mt-2 text-yellow-400 text-lg">★★★★☆</div>
+          </div>
+        </div>
+
+        <!-- 19 -->
+        <div class="bg-white p-8 rounded-2xl shadow-xl w-80 shrink-0">
+          <p class="text-gray-600 italic">"My wig install stayed intact for weeks. Excellent work!"</p>
+          <div class="mt-6">
+            <div class="font-semibold">Sarah L.</div>
+            <div class="text-xs text-gray-500">Wig Install</div>
+            <div class="mt-2 text-yellow-400 text-lg">★★★★★</div>
+          </div>
+        </div>
+
+        <!-- 20 -->
+        <div class="bg-white p-8 rounded-2xl shadow-xl w-80 shrink-0">
+          <p class="text-gray-600 italic">"Beautiful lashes, neat braids, and amazing staff. My favorite salon!"</p>
+          <div class="mt-6">
+            <div class="font-semibold">Nandi F.</div>
+            <div class="text-xs text-gray-500">Lashes & Braids</div>
+            <div class="mt-2 text-yellow-400 text-lg">★★★★★</div>
+          </div>
+        </div>
+
       </div>
-    </section>
+    </div>
+
+  </div>
+
+  <!-- Animation -->
+  <style>
+    .animate-smoothSlide {
+      animation: smoothSlide 69s linear infinite;
+    }
+    @keyframes smoothSlide {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .overflow-x-auto {
+      cursor: grab;
+    }
+    .overflow-x-auto:active {
+      cursor: grabbing;
+    }
+  </style>
+
+</section>
+
+
 
 
 
